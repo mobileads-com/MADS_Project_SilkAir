@@ -1,0 +1,58 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent; }
+body {
+    line-height: 1; }
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent; }
+.wrapper {
+    width: 320px;
+    height: 480px;
+    background: url("../img/background.jpg") no-repeat;
+    text-align: center;
+    /*padding-top: 77px; */
+}
+#yt_frame {
+    width: 320px;
+    height: 180px;
+    background: url("../img/youtube.jpg") no-repeat top;
+    cursor: pointer;
+}
+#yt_frame.repeat {
+    cursor: pointer;
+    background-position: bottom; }
+.button {
+    width: 157px;
+    height: 47px;
+    /*background: url("../img/button.png") no-repeat;*/
+    display: inline-block;
+    margin: 165px 0 0; }
+.button-top{
+    width: 320px;
+    height: 77px;
+    cursor: pointer;
+}

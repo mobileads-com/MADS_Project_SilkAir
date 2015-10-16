@@ -1,0 +1,43 @@
+.wrapper{
+	/*padding-top: 144px;*/
+	height: 1024px;
+	width: 768px;
+	background: url("../img/sa-sb-01-05-tablet.jpg") no-repeat;
+}
+
+#yt_frame {
+	width: 768px;
+	height: 432px;
+	background: url("../img/youtube.jpg") no-repeat top; 
+	cursor: pointer;
+	margin-top: -6px;
+}
+
+.button {
+/*	width: 289px;
+	height: 65px;
+	display: inline-block;
+	margin: 347px 0 0 233px;
+	cursor: pointer;
+	border-radius: 16px;*/
+	width: 766px;
+	height: 446px;
+	display: inline-block;
+	margin: 0px 0 0 0px;
+	cursor: pointer;
+}
+
+.button-top {
+/*	width: 289px;
+	height: 65px;
+	display: inline-block;
+	margin: 347px 0 0 233px;
+	cursor: pointer;
+	border-radius: 16px;*/
+	width: 765px;
+	height: 147px;
+	display: inline-block;
+	margin: 0px 0 0 0px;
+	cursor: pointer;
+	/*border: 1px solid blue;*/
+}
