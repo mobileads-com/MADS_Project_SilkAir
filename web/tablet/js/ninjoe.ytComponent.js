@@ -89,13 +89,13 @@ ytComponent.prototype.onPlayerStateChange = function (event) {
     if (event.data == -1) {
 
         /* tracking */
-        this.tracker('E', 'unstarted');
+        this.tracker.tracker('E', 'unstarted');
     } else if (event.data == 0) {
         /* next play is replay */
         this.replay = true;
 
         /* tracking */
-        this.tracker('E', 'end');
+        this.tracker.tracker('E', 'end');
     } else if (event.data == 1) {
 
         /* tracking */
@@ -103,16 +103,16 @@ ytComponent.prototype.onPlayerStateChange = function (event) {
             /* Start RealTime */
             this.realTime = setInterval(this.curry(this.videoPlayLength, this), 100);
 
-            this.tracker('E', 'playing');
+            this.tracker.tracker('E', 'playing');
         } else {
-            this.tracker('E', 'replay');
+            this.tracker.tracker('E', 'replay');
         }
     } else if (event.data == 2) {
 
         /* Clear RealTime */
         clearInterval(this.realTime);
         /* tracking */
-        this.tracker('E', 'paused');
+        this.tracker.tracker('E', 'paused');
     }
 };
 
@@ -150,4 +150,5 @@ ytComponent.prototype.videoPlayLength = function () {
     if (complete) {
         clearInterval(this.realTime);
     }
+
 };

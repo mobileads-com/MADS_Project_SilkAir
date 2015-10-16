@@ -98,41 +98,6 @@ mads.prototype.loadCss = function (href) {
     this.headTag.appendChild(link);
 };
 
-/*
- *
- * Unit Testing for mads
- *
- */
-var testunit = function () {
-    var app = new mads();
-
-    console.log(typeof app.bodyTag != 'undefined');
-    console.log(typeof app.headTag != 'undefined');
-    console.log(typeof app.custTracker != 'undefined');
-    console.log(typeof app.path != 'undefined');
-    console.log(typeof app.contentTag != 'undefined');
-
-    app.loadJs('https://code.jquery.com/jquery-1.11.3.min.js',function () {
-        console.log(typeof window.jQuery != 'undefined');
-    });
-
-    app.loadCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
-
-    app.contentTag.innerHTML =
-        '<div class="container"><div class="jumbotron"> \
-            <h1>Hello, world!</h1> \
-            <p>...</p> \
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> \
-        </div></div>';
-
-    app.custTracker = ['http://www.tracker.com?type={{type}}&tt={{tt}}','http://www.tracker2.com?type={{type}}'];
-
-    app.tracker('CTR', 'test');
-    app.tracker('E','test','name');
-
-    app.linkOpener('http://www.google.com');
-};
-
 //SilkAir Application
 var video;
 
@@ -165,7 +130,7 @@ var SilkAirAd = function () {
         //redirect to the site
         $('.button').click(function(){
             app.linkOpener('http://www.silkair.com/');
-            app.tracker('CTR','site');
+            app.tracker('CTR','sia_site');
         });
     };
 
